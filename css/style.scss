@@ -1,0 +1,107 @@
+@import "null";
+
+html {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.button {
+	width: 234px;
+	height: 48px;
+	background: #9c0332;
+	border-radius: 30px;
+	font-size: 1.125rem;
+	line-height: 22px;
+	transition: background 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	&:hover {
+		background: #eb443f;
+		cursor: url("../img/cursor.svg"), auto;
+	}
+}
+
+// ============= main ============ //
+
+.home {
+	height: 1024px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url("../img/BGmain.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	&__title {
+		max-width: 790px;
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 122%;
+		padding-top: 217px;
+		padding-bottom: 32px;
+	}
+
+	&__text {
+		max-width: 480px;
+		font-weight: 300;
+		font-size: 1.125rem;
+		line-height: 178%;
+		padding-bottom: 44px;
+		& span {
+			font-weight: 700;
+		}
+	}
+}
+
+// ============= games ============ //
+
+.games {
+	background: #000915;
+	padding: 128px 0;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		justify-content: center;
+	}
+	&__item {
+		position: relative;
+		&:hover .games__lg {
+			opacity: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		color: #fff;
+		& img {
+			border-radius: 16px;
+		}
+		&:hover {
+			cursor: url("../img/cursor.svg"), auto;
+		}
+	}
+	&__text {
+		position: absolute;
+		bottom: 32px;
+		left: 32px;
+		z-index: 1;
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 133%;
+	}
+	&__lg {
+		background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		transition: opacity 0.5s ease;
+		border-radius: 16px;
+	}
+}
