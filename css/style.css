@@ -126,6 +126,21 @@ html {
   cursor: url("../img/cursor.svg"), auto;
 }
 
+.block-content__title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 123%;
+  padding-bottom: 32px;
+}
+.block-content__text {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 178%;
+}
+.block-content__text:not(:last-child) {
+  padding-bottom: 32px;
+}
+
 .home {
   height: 1024px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-7.35%, rgba(0, 0, 0, 0)), to(#000915)), url("../img/BGmain.jpg");
@@ -154,7 +169,7 @@ html {
 }
 
 .games {
-  background: #000915;
+  background-color: #000915;
   padding: 128px 0;
 }
 .games__row {
@@ -180,6 +195,7 @@ html {
 }
 .games__link img {
   border-radius: 16px;
+  width: 100%;
 }
 .games__link:hover {
   cursor: url("../img/cursor.svg"), auto;
@@ -205,4 +221,156 @@ html {
   -o-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   border-radius: 16px;
+}
+
+.seasons {
+  background-color: #000915;
+  padding: 233px 0;
+}
+.seasons__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 64px;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.seasons__content {
+  max-width: 584px;
+}
+.seasons__img {
+  max-width: 485px;
+  margin-left: auto;
+}
+
+.memorize {
+  background-color: #000915;
+  padding: 239px 0;
+}
+.memorize__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 64px;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.memorize__content {
+  max-width: 588px;
+  margin-left: auto;
+}
+.memorize__img {
+  max-width: 481px;
+}
+
+.riddles-game {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000915), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(-7.35%, rgba(0, 0, 0, 0)), to(#000915)), url("../img/BGfoot.jpg"), #000915;
+  background: -o-linear-gradient(top, #000915 0%, rgba(0, 0, 0, 0) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url("../img/BGfoot.jpg"), #000915;
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url("../img/BGfoot.jpg"), #000915;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 276px;
+  padding-bottom: 288px;
+  text-align: center;
+}
+.riddles-game__button {
+  margin: 0 auto;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000915;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__text {
+  font-size: 0.75rem;
+  line-height: 125%;
+}
+
+@media (max-width: 1150px) {
+  .block-content {
+    text-align: center;
+    max-width: inherit;
+  }
+  .block-content__button {
+    margin: 0 auto;
+  }
+  .seasons {
+    padding: 51px 0px 85px 0px;
+  }
+  .seasons__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .seasons__img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .memorize {
+    padding: 51px 0px 90px 0px;
+  }
+  .memorize__content {
+    margin-left: inherit;
+  }
+  .memorize__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .memorize__img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-content__title {
+    font-size: 2rem;
+  }
+  .block-content__text {
+    font-size: 0.875rem;
+    line-height: 157%;
+  }
+  .home {
+    height: 735px;
+    text-align: center;
+  }
+  .home__title {
+    font-size: 2rem;
+    padding-top: 238px;
+    padding-bottom: 33px;
+  }
+  .home__text {
+    font-size: 0.875rem;
+    line-height: 157%;
+    padding-bottom: 32px;
+  }
+  .home__button {
+    margin: 0 auto;
+  }
+  .riddles-game {
+    padding-top: 51px;
+    padding-bottom: 487px;
+  }
 }
