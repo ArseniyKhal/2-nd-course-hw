@@ -1,0 +1,68 @@
+@media (max-width: 1150px) {
+	.block-content {
+		text-align: center;
+		max-width: inherit;
+		&__button {
+			margin: 0 auto;
+		}
+	}
+
+	.seasons {
+		padding: 51px 0px 85px 0px;
+		&__body {
+			flex-direction: column;
+		}
+		&__img {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	.memorize {
+		padding: 51px 0px 90px 0px;
+		&__content {
+			margin-left: inherit;
+		}
+		&__body {
+			flex-direction: column-reverse;
+		}
+		&__img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.block-content {
+		&__title {
+			font-size: 2rem;
+		}
+		&__text {
+			font-size: 0.875rem;
+			line-height: 157%;
+		}
+	}
+
+	.home {
+		height: 735px;
+		text-align: center;
+		&__title {
+			font-size: 2rem;
+			padding-top: 238px;
+			padding-bottom: 33px;
+		}
+		&__text {
+			font-size: 0.875rem;
+			line-height: 157%;
+			padding-bottom: 32px;
+		}
+		&__button {
+			margin: 0 auto;
+		}
+	}
+
+	.riddles-game {
+		padding-top: 51px;
+		padding-bottom: 487px;
+	}
+}

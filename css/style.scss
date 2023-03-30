@@ -1,4 +1,5 @@
 @import "null";
+$BGColor: #000915;
 
 html {
 	font-family: "Montserrat", sans-serif;
@@ -28,6 +29,23 @@ html {
 	&:hover {
 		background: #eb443f;
 		cursor: url("../img/cursor.svg"), auto;
+	}
+}
+
+.block-content {
+	&__title {
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 123%;
+		padding-bottom: 32px;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 1.125rem;
+		line-height: 178%;
+		&:not(:last-child) {
+			padding-bottom: 32px;
+		}
 	}
 }
 
@@ -62,7 +80,7 @@ html {
 // ============= games ============ //
 
 .games {
-	background: #000915;
+	background-color: $BGColor;
 	padding: 128px 0;
 	&__row {
 		display: flex;
@@ -81,6 +99,7 @@ html {
 		color: #fff;
 		& img {
 			border-radius: 16px;
+			width: 100%;
 		}
 		&:hover {
 			cursor: url("../img/cursor.svg"), auto;
@@ -105,3 +124,79 @@ html {
 		border-radius: 16px;
 	}
 }
+
+// ============= seasons ============ //
+
+.seasons {
+	background-color: $BGColor;
+	padding: 233px 0;
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		row-gap: 64px;
+		column-gap: 32px;
+	}
+
+	&__content {
+		max-width: 584px;
+	}
+
+	&__img {
+		max-width: 485px;
+		margin-left: auto;
+	}
+}
+
+// ============= memorize ============ //
+
+.memorize {
+	background-color: $BGColor;
+	padding: 239px 0;
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		row-gap: 64px;
+		column-gap: 32px;
+	}
+	&__content {
+		max-width: 588px;
+		margin-left: auto;
+	}
+	&__img {
+		max-width: 481px;
+	}
+}
+
+// ============= riddles-game ============ //
+
+.riddles-game {
+	background: linear-gradient(180deg, $BGColor 0%, rgba(0, 0, 0, 0) 100%),
+		linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, $BGColor 100%), url("../img/BGfoot.jpg"), $BGColor;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 276px;
+	padding-bottom: 288px;
+	text-align: center;
+	&__content {
+	}
+	&__button {
+		margin: 0 auto;
+	}
+}
+
+// ============= footer ============ //
+.footer {
+	height: 80px;
+	background-color: $BGColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__text {
+		font-size: 0.75rem;
+		line-height: 125%;
+	}
+}
+
+@import "adaptive";
