@@ -45,12 +45,6 @@
 // }
 
 //Задание 6
-let fridayNumber = 3; //номер первой пятницы месяца (число от 1 до 7)
-for (fridayNumber; fridayNumber <= 31; fridayNumber = fridayNumber + 7) {
+for (fridayNumber = 3; fridayNumber <= 31; fridayNumber += 7) {
 	console.log(`Сегодня пятница, ${fridayNumber}-е число. Необходимо подготовить отчет.`);
 }
-
-
-
-
-
