@@ -58,7 +58,7 @@
 // ----------Задание 2-------------
 
 // function parity(num) {
-// 	let result = (num % 2 === 0) ? `Число четное` : `Число не четное`;
+// 	let result = num % 2 === 0 ? `Число четное` : `Число не четное`;
 // 	console.log(result);
 // };
 
@@ -142,11 +142,9 @@
 
 
 // ----------Задание 8-------------
-let monthNumber;
-
-function seasons(monthNumber) {
+function seasons() {
 	let season;
-	monthNumber = Number(prompt("введи номер месяца"));
+	const monthNumber = Number(prompt("введи номер месяца"));
 	if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
 		season = "Зима";
 	} else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
