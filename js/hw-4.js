@@ -45,6 +45,7 @@
 // }
 
 //Задание 6
-for (fridayNumber = 3; fridayNumber <= 31; fridayNumber += 7) {
-	console.log(`Сегодня пятница, ${fridayNumber}-е число. Необходимо подготовить отчет.`);
-}
+// for (fridayNumber = 3; fridayNumber <= 31; fridayNumber += 7) {
+// 	console.log(`Сегодня пятница, ${fridayNumber}-е число. Необходимо подготовить отчет.`);
+// }
+
