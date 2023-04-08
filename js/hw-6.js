@@ -25,24 +25,17 @@
 // let numbers = [1, 5, 4, 10, 0, 3]
 
 // for (let item of numbers) {
+// 	console.log(item);
 // 	if (item === 10) {
-// 		console.log(item);
 // 		break;
-// 	} else {
-// 		console.log(item);
-// 	}
-// }
+// 	};
+// };
 
 
 // ----------Задание 2 -------------
 
 // let numbers = [1, 5, 4, 10, 0, 3]
-
-// numbers.forEach((el, index) => {
-// 	if (el === 4) {
-// 		console.log(`У числа ` + (el) + ` позиция ${index}`)
-// 	};
-// });
+// console.log(numbers.indexOf(4));
 
 
 // ----------Задание 3 -------------
@@ -108,29 +101,22 @@
 // 	[4, 5, 6]
 // ];
 
-// let allNumbers = [];
-// for (let i = 0; i < numbers.length; i++) {			// перебор массива numbers
-// 	for (let j = 0; j < numbers[0].length; j++) {	// перебор подмассивов
-// 		allNumbers.push(numbers[i][j]);
-// 	}
-// }
-// console.log(allNumbers);
+// let num = numbers.flat();
+// console.log(num);
 
 
 // ----------Задание 10 -------------
 
-// let numbers = [3, 9, 8, 1, 7, 4, 4, 6, 1, 5]		// 10 элементов
+let numbers = [3, 9, 8, 1, 7, 4, 4, 6, 1, 5]		// 10 элементов
 
-// for (let i = 0; i < numbers.length; i++) {
-// 	if (numbers[++i]) {
-// 		i--;
-// 		let sum = numbers[i] + numbers[++i];
-// 		console.log(sum);
-// 		i--;
-// 	} else {
-// 		break;
-// 	}
-// }
+for (let i = 0; i < numbers.length; i++) {
+	if (numbers[i + 1]) {
+		let sum = numbers[i] + numbers[i + 1];
+		console.log(sum);
+	} else {
+		break;
+	}
+}
 
 
 // ----------Задание 11 -------------
