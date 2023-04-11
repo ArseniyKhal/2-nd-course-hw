@@ -107,16 +107,16 @@
 
 // ----------Задание 10 -------------
 
-let numbers = [3, 9, 8, 1, 7, 4, 4, 6, 1, 5]		// 10 элементов
+// let numbers = [3, 9, 8, 1, 7, 4, 4, 6, 1, 5]		// 10 элементов
 
-for (let i = 0; i < numbers.length; i++) {
-	if (numbers[i + 1]) {
-		let sum = numbers[i] + numbers[i + 1];
-		console.log(sum);
-	} else {
-		break;
-	}
-}
+// for (let i = 0; i < numbers.length; i++) {
+// 	if (numbers[i + 1]) {
+// 		let sum = numbers[i] + numbers[i + 1];
+// 		console.log(sum);
+// 	} else {
+// 		break;
+// 	}
+// }
 
 
 // ----------Задание 11 -------------

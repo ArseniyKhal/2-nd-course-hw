@@ -351,6 +351,8 @@ html {
   .block-content__text {
     font-size: 0.875rem;
     line-height: 157%;
+    max-width: 480px;
+    margin: 0 auto;
   }
   .home {
     height: 735px;
@@ -365,6 +367,7 @@ html {
     font-size: 0.875rem;
     line-height: 157%;
     padding-bottom: 32px;
+    margin: 0 auto;
   }
   .home__button {
     margin: 0 auto;
