@@ -8,15 +8,19 @@
 
 // ----------Задание 2 -------------
 
-// const products = ['Хлеб Бородинский', 'Молоко Молочник', 'Коровка Молоко', 'Груша Конференция', 'Сервелат Московский', 'Сгущённое молоко'];
-// const search = 'молоко';
 // const result = [];
 
-// products.forEach((product) => {
-// 	if (product.toLowerCase().includes(search.toLowerCase())) {
-// 		result.push(product);
-// 	}
-// });
+// function searchStart(arr, str) {
+// 	return arr.forEach(item => {
+// 		if (item.toLowerCase().includes(str.toLowerCase())) {
+// 			result.push(item)
+// 		};
+// 	});
+// }
+
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+// //searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+// //searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
 // console.log(result);
 
 

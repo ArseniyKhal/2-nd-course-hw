@@ -22,7 +22,6 @@ function seasons() {
 // ----------играем в Запомни слова -------------
 
 function memorizeWords() {
-	let regexp = /^[а-яА-Я]*$/;
 	let firstEl;
 	let secondEl;
 	let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
@@ -33,20 +32,12 @@ function memorizeWords() {
 	console.log(fruits[fruits.length - 1]);//подсказка
 
 	firstEl = prompt('Чему равнялся первый элемент массива?');
-	if (regexp.test(firstEl)) {
-		secondEl = prompt('Чему равнялся последний элемент массива?');
-		if (regexp.test(secondEl)) {
-			if (firstEl.toLowerCase() === fruits[0].toLowerCase() && secondEl.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
-				alert('Молодец, угадал!')
-			} else if (firstEl.toLowerCase() === fruits[0].toLowerCase() || secondEl.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
-				alert('Вы были близки к победе!')
-			} else {
-				alert('Вы не угадал ни одного элемента.\nПопробуй еще раз')
-			}
-		} else {
-			alert('Введены некорректные символы');
-		}
+	secondEl = prompt('Чему равнялся последний элемент массива?');
+	if (firstEl.toLowerCase() === fruits[0].toLowerCase() && secondEl.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
+		alert('Молодец, угадал!')
+	} else if (firstEl.toLowerCase() === fruits[0].toLowerCase() || secondEl.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
+		alert('Вы были близки к победе!')
 	} else {
-		alert('Введены некорректные символы');
+		alert('Вы не угадал ни одного элемента.\nПопробуй еще раз')
 	}
 };
